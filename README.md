@@ -1,0 +1,2 @@
+# vimrctemplate
+Vim settings template
