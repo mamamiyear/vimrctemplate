@@ -1,0 +1,65 @@
+" plugin settings start ========================================================"
+
+" change runtime path
+set rtp+=~/.vim/bundle/Vundle.vim
+
+" vundle init, Plugins must be declare behind this
+call vundle#begin()
+
+" vundle plugin ---------------------------
+Plugin 'VundleVim/Vundle.vim'
+"
+
+" nerdtree plugin -------------------------
+Plugin 'crooloose/nerdtree'
+    " set nerdtree format
+    let NERDChristmasTree=0
+    let NERDTreeWinSize=35
+    let NERDTreeChDirMode=2
+    let NERDTreeShowBookmarks=1
+    let NERDTreeWinPos="left"
+    " set nerdtree ignore file or directory
+    let NERDTreeIgnore=['.git$', '\~$', '\.pyc$', '\.swp$']
+    " automatically open a NERDTree if no files where specified
+    autocmd vimenter * if !argc() | NERDTree | endif
+    " close vim if the only window left open is a NERDTree
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+    " set a NERDTree shortcut
+    nmap F5- :NERDTreeTogglecr-
+"
+
+" tagbar plugin ---------------------------
+Plugin 'majutsushi/tagbar'
+    " it need install ctags firstly, you can use 'apt install ctags' in Ubuntu.
+    " set tagbar format
+    let g:tagbar_width=35
+    let g:tagbar_autofocus=1
+    " auto open tagbar when open file with follow type
+    autocmd BufReadPost *.py,*.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()
+    " set a tagbar shortcut
+    nmap F6- :TagbarToggleCR-
+"
+
+" vim-powerline plugin --------------------
+Plugin 'Lokaltog/vim-powerline'
+    " set status line always show
+    set laststatus=2
+    " display by color
+    set t_Co=256
+    " show little symbols
+    let g:Powerline_symbols='unicode'
+"
+
+" bufexplorer plugin ----------------------
+Plugin 'vim-scripts/bufexplorer.zip'
+"
+
+" you complete me plugin ------------------
+Plugin 'Valloric/YouCompleteMe'
+"
+
+" vundle stop, it must must be put behind Plugins
+call vundle#end()
+
+" plugin settings end =========================================================="
+

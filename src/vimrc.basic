@@ -1,10 +1,10 @@
-" author: mamamiyear
-" date:   2018-11-17
-
 " basic settings start ========================================================="
 
 " open syntax color on
 set syntax=on
+
+" use mouse support
+"set mouse=a
 
 " show line number
 set number
