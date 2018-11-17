@@ -1,9 +1,15 @@
 " author: mamamiyear
 " date:   2018-11-17
+
 " basic settings start ========================================================="
+
+" open syntax color on
+set syntax=on
 
 " show line number
 set number
+" it is writed 'nu' simply
+" if you want close it, you can use command: set nonu
 
 " show searched content wiht highlight
 set hlsearch
@@ -40,6 +46,11 @@ set expandtab
 set listchars=tab:>-,trail:-
 set list
 
+" set color scheme, you can choose scheme in /usr/share/vim/vim74/colors
+"colorscheme default
+
+" set comment color
+hi comment ctermfg=cyan
+
 " basic settings end ==========================================================="
-hi comment ctermfg=6
 
