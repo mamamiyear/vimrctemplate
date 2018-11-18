@@ -25,7 +25,7 @@ Plugin 'crooloose/nerdtree'
     " close vim if the only window left open is a NERDTree
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
     " set a NERDTree shortcut
-    nmap F5- :NERDTreeTogglecr-
+    nmap <F5> :NERDTreeToggle<CR>
 "
 
 " tagbar plugin ---------------------------
@@ -37,7 +37,7 @@ Plugin 'majutsushi/tagbar'
     " auto open tagbar when open file with follow type
     autocmd BufReadPost *.py,*.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()
     " set a tagbar shortcut
-    nmap F6- :TagbarToggleCR-
+    nmap <F6> :TagbarToggle<CR>
 "
 
 " vim-powerline plugin --------------------
@@ -52,6 +52,12 @@ Plugin 'Lokaltog/vim-powerline'
 
 " bufexplorer plugin ----------------------
 Plugin 'vim-scripts/bufexplorer.zip'
+    " don't show default help.
+    let g:bufExplorerDefaultHelp=0
+    " show relative paths.
+    let g:bufExplorerShowRelativePath=1
+    " sort by most recently used.
+    let g:bufExplorerSortBy='mru'
 "
 
 " you complete me plugin ------------------
