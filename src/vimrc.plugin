@@ -64,6 +64,12 @@ Plugin 'vim-scripts/bufexplorer.zip'
 Plugin 'Valloric/YouCompleteMe'
 "
 
+" tabbar (patch version) plugin -----------
+Plugin 'humiaozuzu/TabBar'
+    let g:Tb_MaxSize = 2
+    let g:Tb_TabWrap = 1
+"
+
 " vundle stop, it must must be put behind Plugins
 call vundle#end()
 
