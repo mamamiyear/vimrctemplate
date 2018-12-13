@@ -61,7 +61,7 @@ Plugin 'vim-scripts/bufexplorer.zip'
 "
 
 " you complete me plugin ------------------
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 "
 
 " tabbar (patch version) plugin -----------
