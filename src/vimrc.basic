@@ -51,6 +51,10 @@ set list
 
 " set comment color
 hi comment ctermfg=cyan
+" set search color
+hi Search ctermfg=black ctermbg=yellow
+" set visual color
+hi Visual cterm=reverse ctermbg=0
 
 " basic settings end ==========================================================="
 
