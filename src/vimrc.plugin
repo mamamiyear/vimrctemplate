@@ -1,5 +1,3 @@
-" plugin settings start ========================================================"
-
 " change runtime path
 set rtp+=~/.vim/bundle/Vundle.vim
 
@@ -72,6 +70,4 @@ Plugin 'humiaozuzu/TabBar'
 
 " vundle stop, it must must be put behind Plugins
 call vundle#end()
-
-" plugin settings end =========================================================="
 
