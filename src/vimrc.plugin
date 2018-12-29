@@ -9,7 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 "
 
 " nerdtree plugin -------------------------
-Plugin 'crooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
     " set nerdtree format
     let NERDChristmasTree=0
     let NERDTreeWinSize=35
