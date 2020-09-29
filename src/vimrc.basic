@@ -1,13 +1,15 @@
-" open syntax color on
-set syntax=on
+"""""""""""""""""""""""""basic settings""""""""""""""""""""""""""
+" set color scheme, you can choose scheme in /usr/share/vim/vim74/colors
+set t_Co=256
+colorscheme elflord
 
-" use mouse support
-"set mouse=a
+" open syntax color on
+syntax on
 
 " show line number
 set number
 " it is writed 'nu' simply
-" if you want close it, you can use command: set nonu
+" if you want to close it, you can use command 'set nonu'
 
 " show searched content wiht highlight
 set hlsearch
@@ -40,12 +42,14 @@ set shiftwidth=4
 set expandtab
 " if you want to use tab you can 'set noexpandtab'
 
+" use auto indent
+set autoindent
+set smartindent
+" if you want to close it, you can use command ':set noautoident' or ':set nosmartident'
+
 " show some blank character
 set listchars=tab:>-,trail:-
 set list
-
-" set color scheme, you can choose scheme in /usr/share/vim/vim74/colors
-"colorscheme default
 
 " set comment color
 hi comment ctermfg=cyan
