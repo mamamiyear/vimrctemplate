@@ -9,7 +9,7 @@ cd ${cur_dir}
 
 [ -d ${output_dir} ] || mkdir ${output_dir}
 
-src_file=(vimrc.title vimrc.plugin vimrc.basic)
+src_file=(vimrc.title vimrc.plugin vimrc.basic vimrc.advanced)
 
 touch vimrc.temp
 
